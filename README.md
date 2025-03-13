@@ -1,74 +1,74 @@
-<<<<<<< HEAD
-# Portfolio_Template
-=======
-# Getting Started with Create React App
+# React.js Portfolio Template
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+The **React.js Portfolio Template** is a fully customizable and modern portfolio built with **React.js**, **Tailwind CSS**, and **Material-UI**. It features a **dark mode toggle**, smooth **Framer Motion animations**, **lazy loading**, and **AOS effects** for an enhanced user experience. The template is highly optimized, responsive, and designed to showcase projects, skills, and experiences in a visually appealing manner.
 
-## Available Scripts
+## Features
+- **Built with React.js** – Component-based architecture for modular development.
+- **Tailwind CSS & SCSS** – Clean, maintainable, and customizable styles.
+- **Material-UI** – Enhanced UI components for a modern look.
+- **Dark Mode Support** – Theme toggle with state persistence.
+- **Framer Motion & AOS** – Smooth animations and scroll effects.
+- **React Router** – Seamless page navigation.
+- **Lazy Loading** – Optimized performance with dynamic imports.
+- **SEO Optimized** – Proper metadata and structured content.
+- **Fully Responsive** – Works across all screen sizes.
 
-In the project directory, you can run:
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Joshua-Ranish-T/Portfolio_Template.git
+   ```
+2. Navigate to the project folder:
+   ```bash
+   cd Portfolio_Template
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm start
+   ```
 
-### `npm start`
+## Customization
+- Modify `src/userDetails.js` to update personal details.
+- Update theme settings in `src/theme.js`.
+- Add or remove sections in `src/Sections`.
+- Customize styles in `src/Styles`.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Deployment
+### Deploy to GitHub Pages:
+```bash
+npm run build
+git add .
+git commit -m "Deploy update"
+git push origin main
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Deploy to Vercel:
+1. Install Vercel CLI:
+   ```bash
+   npm install -g vercel
+   ```
+2. Deploy:
+   ```bash
+   vercel
+   ```
 
-### `npm test`
+## Technologies Used
+- **React.js**
+- **Tailwind CSS & SCSS**
+- **Material-UI**
+- **Framer Motion & AOS**
+- **React Router**
+- **Lazy Loading**
+- **Git & GitHub**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## License
+This project is open-source and available under the **MIT License**.
 
-### `npm run build`
+## Contact
+For any issues or suggestions, feel free to reach out or open an issue on GitHub!
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> 0b16b58 (Initial commit)
