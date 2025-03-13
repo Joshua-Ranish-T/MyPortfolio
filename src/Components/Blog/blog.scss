@@ -1,0 +1,64 @@
+#Blog {
+    display: flex;
+    flex-direction: column;
+    height: 745px;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 100px;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    #Blog {
+      height: auto;
+      padding-top: 80px;
+    }
+  
+    .top {
+      text-align: center;
+    }
+  
+    .bottom {
+      width: 100%;
+      padding: 0 20px;
+    }
+  
+    .bottom .StyledBox {
+      gap: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    #Blog {
+      height: auto;
+      padding-top: 60px;
+    }
+  
+    .bottom .StyledBox {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .bottom .StyledBoxPortfolio {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    #Blog {
+      padding-top: 40px;
+    }
+  
+    .bottom .StyledBox {
+      gap: 10px;
+    }
+  
+    .bottom .StyledBoxPortfolio {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .bottom .StyledAnchor {
+      font-size: 12px;
+    }
+  }
+  

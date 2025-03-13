@@ -1,0 +1,42 @@
+#Portfolios {
+  display: flex;
+  height: 800px;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  .head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 170px;
+  }
+
+  .foot {
+    display: flex;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 1024px) {
+    #Portfolios {
+      height: auto;
+    }
+    .head {
+      padding: 0px 50px; 
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    height: auto;
+    padding: 5px;
+    .head {
+      flex-direction: column;
+      padding: 0px 20px;
+    }
+
+    .foot {
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 20px;
+    }
+  }
+}

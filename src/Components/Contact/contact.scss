@@ -1,0 +1,103 @@
+#Contact{
+    height: 660px;
+    display: flex;
+    flex-direction: row;
+    padding: 105px 120px;
+    justify-content: space-around;
+    .left{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 40px;
+       
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-bottom: 30px;
+        .path{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            .pather{
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #Contact {
+      flex-direction: column;
+      padding: 60px 60px;
+      height: auto;
+      gap: 40px;
+  
+      .left {
+        width: 100%;
+        gap: 20px;
+      }
+  
+      .right {
+        gap: 30px;
+        .path {
+          align-items: center;
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    #Contact {
+      padding: 40px 20px;
+  
+      .left {
+        gap: 15px;
+      }
+  
+      .right {
+        gap: 20px;
+        .path{
+            flex-direction: column;
+        }
+      }
+    }
+  
+    .path {
+      .pather {
+        gap: 6px;
+        text-align: center;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    #Contact {
+      padding: 30px 15px;
+  
+      .left {
+        gap: 10px;
+      }
+  
+      .right {
+        gap: 15px;
+        .path{
+            flex-direction: column;
+        }
+      }
+    }
+  
+    .path {
+      flex-direction: column;
+      gap: 10px;
+  
+      .pather {
+        gap: 4px;
+        text-align: center;
+      }
+    }
+  }
+  

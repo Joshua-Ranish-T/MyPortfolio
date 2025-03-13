@@ -1,0 +1,84 @@
+#Testimonial {
+    display: flex;
+    flex-direction: column;
+    height: 756px;
+    justify-content: space-evenly;
+    padding: 10px 140px;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    #Testimonial {
+      height: auto;
+      padding: 10px 40px;
+    }
+  
+    .top {
+      text-align: center;
+    }
+  
+    .bot {
+      width: 100%;
+    }
+  
+    .bot .StyledBox {
+      gap: 30px;
+    }
+  
+    .bot .StyledBoxInside {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    #Testimonial {
+      height: auto;
+      padding: 10px 20px;
+      .top{
+        align-self: center;
+        margin-bottom: 30px;
+      }
+    }
+  
+    .bot .StyledBox {
+      gap: 20px;
+    }
+  
+    .bot .StyledBoxInside {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    #Testimonial {
+      padding: 10px 15px;
+      .top{
+        align-self: center;
+        margin-bottom: 20px;
+      }
+    }
+  
+    .bot .StyledBox {
+      gap: 15px;
+    }
+  
+    .bot .StyledBoxInside {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .bot .StyledImageRound {
+      height: 80px;
+      width: 80px;
+    }
+  
+    .bot .StyledDomain {
+      font-size: 14px;
+    }
+  
+    .bot .StylingTitle {
+      font-size: 16px;
+    }
+  }
+  
