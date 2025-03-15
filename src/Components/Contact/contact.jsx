@@ -46,18 +46,34 @@ const Contact = ({ Address, phone, Email, isDarkMode }) => {
     },
   ];
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    const name = nameRef.current.value;
-    const email = mailRef.current.value;
-    const message = messageRef.current.value;
-    toast.success("Message sent Successfully !!")
-    console.log(name + email + message)
-    nameRef.current.value = "";
-    mailRef.current.value = "";
-    messageRef.current.value = "";
-  }
-
+    const handleSubmit = async (event) => {
+      event.preventDefault();
+      const name = nameRef.current.value;
+      const email = mailRef.current.value;
+      const message = messageRef.current.value;
+    
+      try {
+        const response = await fetch("http://localhost:5000/send-email", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ name, email, message }),
+        });
+    
+        if (response.ok) {
+          toast.success("Message sent successfully!");
+          nameRef.current.value = "";
+          mailRef.current.value = "";
+          messageRef.current.value = "";
+        } else {
+          toast.error("Failed to send message. Try again later.");
+        }
+      } catch (error) {
+        console.error("Error sending message:", error);
+        toast.error("Something went wrong.");
+      }
+    };
+    
+  
   return (
     <div
       id="Contact"

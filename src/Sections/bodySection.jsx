@@ -19,6 +19,7 @@ import test1 from "../Assets/test1.jpeg";
 import test2 from "../Assets/test2.png";
 import test3 from "../Assets/test3.jpeg";
 import Login from "../Assets/LoginPage.png"
+import AI from "../Assets/AiArt.png"
 
 const bodySection = ({
   toggleTheme,
@@ -71,7 +72,7 @@ const bodySection = ({
     {
       title: "AI-Art Interpreter",
       domain: "Artificial Intelligence",
-      image: "",
+      image: AI,
       link: "https://github.com/Joshua-Ranish-T/AI-Art_Interpreter",
     },
     {
