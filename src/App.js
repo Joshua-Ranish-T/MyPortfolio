@@ -40,7 +40,7 @@ const App = () => {
     GitHub: "https://github.com/Joshua-Ranish-T",
     X: "",
     linkedIn: "https://www.linkedin.com/in/joshua-ranish-t-1065822b9/",
-    Address: "2,12 D st paul's road,palayamkottai, Tirunelveli",
+    Address: "2,12 D st paul's road, palayamkottai, Tirunelveli",
     phone: "+91 8220002104",
     Email: "joshuaranish@gmail.com",
   };

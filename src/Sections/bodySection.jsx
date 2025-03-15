@@ -18,6 +18,7 @@ import blog3 from "../Assets/blog3.png";
 import test1 from "../Assets/test1.jpeg";
 import test2 from "../Assets/test2.jpeg";
 import test3 from "../Assets/test3.jpeg";
+import Login from "../Assets/LoginPage.png"
 
 const bodySection = ({
   toggleTheme,
@@ -70,8 +71,14 @@ const bodySection = ({
     {
       title: "AI-Art Interpreter",
       domain: "Artificial Intelligence",
+      image: "",
+      link: "https://github.com/Joshua-Ranish-T/AI-Art_Interpreter",
+    },
+    {
+      title: "Chat Application",
+      domain: "Firebase",
       image: chatAppImage,
-      link: "",
+      link: "https://github.com/Joshua-Ranish-T/ChatApp-ReactJs-Firebase",
     },
     {
       title: "VPN Implementation",
@@ -80,138 +87,56 @@ const bodySection = ({
       link: "",
     },
     {
-      title: "Web Application",
-      domain: "React",
-      image: Nexcent,
-      link: "",
-    },
-    {
-      title: "Portfolio",
-      domain: "HTML",
-      image: PortfolioImage,
-      link: "",
-    },
-    {
-      title: "VPN Implementation",
-      domain: "Networking",
-      image: VPN,
-      link: "",
+      title: "Login/SignUp Page",
+      domain: "Formik,yup",
+      image: Login,
+      link: "https://github.com/Joshua-Ranish-T/React-Formik-Yup-Toastify-login_signup_Page",
     },
     {
       title: "Web Application",
-      domain: "React",
+      domain: "React Js",
       image: Nexcent,
-      link: "",
-    },
-    {
-      title: "Portfolio",
-      domain: "HTML",
-      image: PortfolioImage,
-      link: "",
+      link: "https://github.com/Joshua-Ranish-T/Nexcent-React-basic",
     },
   ];
 
   //Experience
   const experienceHeading = "CAREER PATH";
-  const subexperienceHeading = "Work Experience";
+  const subexperienceHeading = "PROFESSIONAL Experience";
   const WorkExperience = [
     {
-      company: "Apple",
-      domain: "Front-end Developer",
-      link: "",
-      location: "California, United States",
-      starttime: "Nov 2018",
-      endtime: "Feb 2020",
-      workperiod: "Full Time",
-      language: ["Swift", "Go"],
+      company: "Icanio Technologies",
+      domain: "Front-end Developer Intern",
+      link: "https://icanio.com/",
+      location: "Tirunelveli, Tamil Nadu",
+      starttime: "Nov 2024",
+      endtime: "Dec 2024",
+      workperiod: "On-Site",
+      language: ["React Js", "Formik", "YUP", "Tailwind CSS", "Material-UI", "SCSS/CSS" ,"AOS"],
       feedback: [
-        "Improving overall website performance for mobile users.",
-        "Collaborate with back-end developers and web designers to improve usability.",
-        "Add voice search feature for mobile app.",
-        "Developing an admin panel to manage contents, users, products, and other data.",
+        "Built reusable UI components with React.js, Material-UI, SCSS, and Tailwind CSS.",
+        "Integrated Formik, Yup, and Toastify for seamless form validation and user feedback.",
+        "Improved application responsiveness, stability, and performance optimization.",
+        "Enhanced development workflow, ensuring efficient project execution.",
       ],
     },
     {
-      company: "Microsoft",
-      domain: "Software Engineer",
-      link: "",
-      location: "Redmond, Washington, United States",
-      starttime: "Mar 2020",
-      endtime: "Aug 2021",
-      workperiod: "Full Time",
-      language: ["C#", "JavaScript"],
+      company: "Rishon Communication",
+      domain: "Networking Intern",
+      link: "https://www.rishoncomm.in/about-us.html",
+      location: "Tirunelveli, Tamil Nadu",
+      starttime: "May 2024",
+      endtime: "Jun 2024",
+      workperiod: "Hybrid",
+      language: ["MPLS", "OSPF", "MP-iBGP", "BGP","Subnetting", "Dynamic Routing", "GNS3"],
       feedback: [
-        "Developed cloud-based solutions to improve system scalability.",
-        "Enhanced application performance by optimizing algorithms and reducing memory usage.",
-        "Collaborated with cross-functional teams to design new product features.",
-        "Implemented real-time analytics and reporting dashboard for data insights.",
+        "Configured VPN networks with MPLS, OSPF, and MP-iBGP in GNS3 for secure transmission.",
+        "Conducted manual tests to ensure seamless connectivity and high availability.",
+        "Implemented BGP peering, subnetting, and static routing to enhance network performance.",
+        "Gained hands-on experience in network protocols, troubleshooting, and configuration.",
       ],
     },
-    {
-      company: "Facebook",
-      domain: "Full Stack Developer",
-      link: "",
-      location: "Menlo Park, California, United States",
-      starttime: "Sep 2021",
-      endtime: "Dec 2022",
-      workperiod: "Full Time",
-      language: ["React", "Node.js", "GraphQL"],
-      feedback: [
-        "Built and maintained responsive front-end applications for a high-traffic platform.",
-        "Integrated GraphQL APIs for efficient data fetching across services.",
-        "Led a team in implementing a new authentication system for enhanced security.",
-        "Collaborated with designers to create a seamless user experience across mobile and web.",
-      ],
-    },
-
-    {
-      company: "JPMorgan",
-      domain: "Backend Developer",
-      link: "",
-      location: "New York, United States",
-      starttime: "Jan 2023",
-      endtime: "Present",
-      workperiod: "Full Time",
-      language: ["Java", "Spring Boot", "SQL"],
-      feedback: [
-        "Developed REST APIs for financial transaction processing and reporting.",
-        "Ensured data security and compliance with industry standards.",
-        "Optimized SQL queries for improved data retrieval speed.",
-        "Worked closely with the DevOps team to streamline deployment processes.",
-      ],
-    },
-    {
-      company: "Facebook",
-      domain: "Full Stack Developer",
-      link: "",
-      location: "Menlo Park, California, United States",
-      starttime: "Sep 2021",
-      endtime: "Dec 2022",
-      workperiod: "Full Time",
-      language: ["React", "Node.js", "GraphQL"],
-      feedback: [
-        "Built and maintained responsive front-end applications for a high-traffic platform.",
-        "Integrated GraphQL APIs for efficient data fetching across services.",
-        "Led a team in implementing a new authentication system for enhanced security.",
-        "Collaborated with designers to create a seamless user experience across mobile and web.",
-      ],
-    },
-    {
-      company: "Facebook",
-      domain: "Full Stack Developer",
-      link: "",
-      location: "Menlo Park, California, United States",
-      starttime: "Sep 2021",
-      endtime: "Dec 2022",
-      workperiod: "Full Time",
-      language: ["React", "Node.js", "GraphQL"],
-      feedback: [
-        "Built and maintained responsive front-end applications for a high-traffic platform.",
-        "Integrated GraphQL APIs for efficient data fetching across services.",
-        "Led a team in implementing a new authentication system for enhanced security.",
-        "Collaborated with designers to create a seamless user experience across mobile and web.",
-      ],
-    },
+ 
   ];
 
   //Blog
@@ -273,36 +198,38 @@ const bodySection = ({
   const subeduskillsHeading = "Education & Skills";
   const eduskillsSector = [
     {
-      universityName: "Kingston University",
-      degree: "Master's degree",
-      course: "Software Engineering",
-      year: "2019-2021",
+      universityName: "Chennai Institute Of Technology",
+      degree: "B.Tech",
+      course: "Information Technology",
+      year: "2023-2027",
     },
     {
-      universityName: "Kingston University",
-      degree: "Bachelor's degree",
-      course: "Computer Engineering",
-      year: "2015-2019",
+      universityName: "RoseMary School",
+      degree: "HSC",
+      course: "Computer Science",
+      year: "2021-2023",
     },
     {
-      universityName: "Westminister School",
-      degree: "Diploma's degree",
+      universityName: "RoseMary School",
+      degree: "SSLC",
       course: "Mathematics",
-      year: "2013-2015",
+      year: "2019-2021",
     },
   ];
   const skillcontent =
-    "For 5+ years, I have been continuously learning in the field of front-end and experimenting with new technologies and frameworks, and here you can see a summary of my skills.";
+    "I have been actively exploring and mastering front-end and AI-driven technologies, building responsive web applications, optimizing performance, and integrating intelligent solutions. Here’s a snapshot of my technical expertise and skills.";
   const skillscore = [
-    { skill: "React", percent: 60 },
-    { skill: "Angular", percent: 40 },
-    { skill: "JavaScript", percent: 80 },
-    { skill: "React", percent: 60 },
-    { skill: "Angular", percent: 40 },
-    { skill: "JavaScript", percent: 80 },
-    { skill: "React", percent: 60 },
-    { skill: "Angular", percent: 40 },
-    { skill: "JavaScript", percent: 80 },
+    { skill: "React Js", percent: 95 },
+    { skill: "Java", percent: 80 },
+    { skill: "SCSS/CSS", percent: 75 },
+    { skill: "JavaScript", percent: 60 },
+    { skill: "Firebase", percent: 30 },
+    { skill: "Node Js", percent: 60 },
+    { skill: "MySQL", percent: 30 },
+    { skill: "HTML5", percent: 100 },
+    { skill: "Python", percent: 50 },
+    { skill: "C++", percent: 40 },
+
   ];
 
   return (

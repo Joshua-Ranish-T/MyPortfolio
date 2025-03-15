@@ -13,7 +13,7 @@ const footer = ({Insta,GitHub,X,linkedIn,isDarkMode, firstName,
           linkedIn={linkedIn}
         />
         </div>
-        <p>@ 2024 - {firstName} {secondName}</p>
+        <p>@ 2025 - {firstName} {secondName}</p>
     </div>
   )
 }
