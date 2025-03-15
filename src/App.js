@@ -3,6 +3,8 @@ import HEADER from "./Sections/headerSection.jsx";
 import BODY from "./Sections/bodySection.jsx";
 import FOOTER from "./Sections/footerSection.jsx";
 import personImage from "./Assets/person.png";
+import Resume from "./Assets/Joshua-Ranish-T-Resume.pdf"
+
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { CssBaseline } from "@mui/material";
 import { fullbgcolor, darkbgcolor } from "./theme.js";
@@ -30,17 +32,17 @@ const App = () => {
   });
 
   const userDetails = {
-    firstName: "Alex",
-    secondName: "Smith",
+    firstName: "Joshua",
+    secondName: "Ranish T",
     photo: personImage,
-    Resume: "",
-    Insta: "https://instagram.com/",
-    GitHub: "",
+    Resume: Resume, 
+    Insta: "https://www.instagram.com/joshua._.ranish",
+    GitHub: "https://github.com/Joshua-Ranish-T",
     X: "",
-    linkedIn: "",
-    Address: "3424 Layman Avenue, Fayetteville, NC",
-    phone: "(501)414-1541",
-    Email: "devchapter@gmail.com",
+    linkedIn: "https://www.linkedin.com/in/joshua-ranish-t-1065822b9/",
+    Address: "2,12 D st paul's road,palayamkottai, Tirunelveli",
+    phone: "+91 8220002104",
+    Email: "joshuaranish@gmail.com",
   };
 
   // Update cursor position for the dot

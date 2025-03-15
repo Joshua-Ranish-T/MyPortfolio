@@ -47,19 +47,19 @@ const bodySection = ({
       ),
       title: "UI/UX Design",
       description:
-        "Turn what you have in mind of a digital product into reality. For any platform you consider.",
+        "Crafting intuitive and visually appealing user experiences that bring your digital product ideas to life. Designed for any platform you envision.",
     },
     {
       icon: <LayersOutlinedIcon sx={{ color: secondaryColor }} />,
-      title: "Application Development",
+      title: "AI Application Development",
       description:
-        "Standard designing, building, and implementing your applications with documentation.",
+        "Designing, building, and implementing intelligent applications with seamless functionality and comprehensive documentation for scalability and performance.",
     },
     {
       icon: <LanguageIcon sx={{ color: secondaryColor }} />,
       title: "Web Development",
       description:
-        "Create and maintain your websites and also take care of its performance and traffic capacity.",
+        "Building and maintaining high-performance websites while ensuring optimal speed, scalability, and seamless user experience across all devices.",
     },
   ];
 
@@ -68,8 +68,8 @@ const bodySection = ({
   const subportfolioHeading = "Featured Portfolios";
   const PortfolioSector = [
     {
-      title: "Chat Application",
-      domain: "React",
+      title: "AI-Art Interpreter",
+      domain: "Artificial Intelligence",
       image: chatAppImage,
       link: "",
     },

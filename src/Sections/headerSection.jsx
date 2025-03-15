@@ -19,7 +19,7 @@ const headerSection = ({
   const resumeURL = Resume ? Resume : "";
 
   const heroHeading = "MY NAME IS";
-  const Content = "Creative front-end developer with more than +5 years of experience in enterprise companies and startups. Proficient in JavaScript, Angular, and React. Passionate about UI/UX";
+  const Content = "Creative Web Developer with expertise in React.js, AI integration, real-time data handling, and API management. Passionate about building responsive, user-friendly interfaces with a focus on performance and seamless user experiences.";
 
   return (
     <>
