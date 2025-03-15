@@ -16,7 +16,7 @@ import blog1 from "../Assets/blog1.png";
 import blog2 from "../Assets/blog2.png";
 import blog3 from "../Assets/blog3.png";
 import test1 from "../Assets/test1.jpeg";
-import test2 from "../Assets/test2.jpeg";
+import test2 from "../Assets/test2.png";
 import test3 from "../Assets/test3.jpeg";
 import Login from "../Assets/LoginPage.png"
 
@@ -167,31 +167,34 @@ const bodySection = ({
   ];
 
   //Testimonial
-  const testHeading = "MY CLIENTS";
-  const subtestHeading = "Testimonials";
+  const testHeading = "TESTIMONIALS";
+  const subtestHeading = "What Others Say";
   const testSector = [
-    {
-      Image: test1,
-      content:
-        "We were very pleased to hear how you resolved our website's user interface issues and challenges.",
-      name: "Amelia Miller",
-      work: "Designer",
-    },
+  
     {
       Image: test2,
       content:
-        "I’m glad I decided to work with you. The project was delivered on time with all the requirements.",
-      name: "James Delaney",
-      work: "Developer",
+"Collaborating with him on networking tasks was great. His VPN expertise made complex setups easier.",
+        name: "Dudley Daniel Raj, Teammate",
+        work: "Networking Intern, Rishon Communication",
+    },
+    {
+      Image: test1,
+      content:
+      "A dedicated front-end developer with strong React skills and a focus on performance optimization.",  
+      name: "K. Vinoth Raja",
+      work: "Reporting Manager, Icanio Technologies",
     },
     {
       Image: test3,
       content:
-        "The management of our projects was always faced with difficulties, but you handled these well.",
-      name: "Isabella Bennett",
-      work: "Manager",
-    },
+"Working with him on AI applications was insightful. His problem-solving and model optimization had a real impact.",
+      name: "Kandiah C, Colleague",
+      work: "AI Development Team",
+    }
+    
   ];
+  
 
   //Eduskills
   const eduskillsHeading = "LEARNING PATH";
@@ -253,12 +256,12 @@ const bodySection = ({
         isDarkMode={isDarkMode}
         WorkExperience={WorkExperience}
       />
-      <Blog
+      {/* <Blog
         blogHeading={blogHeading}
         subblogHeading={subblogHeading}
         isDarkMode={isDarkMode}
         blogSector={blogSector}
-      />
+      /> */}
       <Testimonial
         testHeading={testHeading}
         subtestHeading={subtestHeading}

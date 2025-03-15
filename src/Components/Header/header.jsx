@@ -32,7 +32,7 @@ const Header = ({ logo, resume, toggleTheme, isDarkMode, logodark }) => {
     "Services",
     "Portfolios",
     "Experience",
-    "Blog",
+    // "Blog",
     "Testimonial",
     "Eduskills",
     "Contact",
