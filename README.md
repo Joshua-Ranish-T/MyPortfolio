@@ -1,7 +1,7 @@
-# React.js Portfolio Template
+# Joshua Ranish T - React.js Portfolio
 
 ## Overview
-The **React.js Portfolio Template** is a fully customizable and modern portfolio built with **React.js**, **Tailwind CSS**, and **Material-UI**. It features a **dark mode toggle**, smooth **Framer Motion animations**, **lazy loading**, and **AOS effects** for an enhanced user experience. The template is highly optimized, responsive, and designed to showcase projects, skills, and experiences in a visually appealing manner.
+The **Joshua Ranish T Portfolio** is a fully customizable and modern portfolio built with **React.js**, **Tailwind CSS**, and **Material-UI**. It features a **dark mode toggle**, smooth **Framer Motion animations**, **lazy loading**, and **AOS effects** for an enhanced user experience. Designed to showcase my projects, skills, and experiences, the portfolio reflects my expertise in frontend development and networking.
 
 ## Features
 - **Built with React.js** – Component-based architecture for modular development.
@@ -14,48 +14,11 @@ The **React.js Portfolio Template** is a fully customizable and modern portfolio
 - **SEO Optimized** – Proper metadata and structured content.
 - **Fully Responsive** – Works across all screen sizes.
 
-## Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Joshua-Ranish-T/Portfolio_Template.git
-   ```
-2. Navigate to the project folder:
-   ```bash
-   cd Portfolio_Template
-   ```
-3. Install dependencies:
-   ```bash
-   npm install
-   ```
-4. Start the development server:
-   ```bash
-   npm start
-   ```
 
-## Customization
-- Modify `src/userDetails.js` to update personal details.
-- Update theme settings in `src/theme.js`.
-- Add or remove sections in `src/Sections`.
-- Customize styles in `src/Styles`.
-
-## Deployment
-### Deploy to GitHub Pages:
-```bash
-npm run build
-git add .
-git commit -m "Deploy update"
-git push origin main
-```
-
-### Deploy to Vercel:
-1. Install Vercel CLI:
-   ```bash
-   npm install -g vercel
-   ```
-2. Deploy:
-   ```bash
-   vercel
-   ```
+## Projects Displayed
+- **AI Art-Interpreter:** AI-powered tool providing historical insights using Google Gemini API.
+- **Chat Application:** Real-time chat app with Firebase authentication.
+- **Portfolio Template:** This portfolio template designed for easy customization.
 
 ## Technologies Used
 - **React.js**
@@ -70,5 +33,10 @@ git push origin main
 This project is open-source and available under the **MIT License**.
 
 ## Contact
-For any issues or suggestions, feel free to reach out or open an issue on GitHub!
+- **Email:** joshuaranish@gmail.com
+- **Phone:** +91 8220002104
+- **LinkedIn:** [linkedin.com/in/Joshua-Ranish-T](https://linkedin.com/in/Joshua-Ranish-T)
+- **GitHub:** [github.com/Joshua-Ranish-T](https://github.com/Joshua-Ranish-T)
+
+Feel free to reach out for any questions or suggestions!
 
