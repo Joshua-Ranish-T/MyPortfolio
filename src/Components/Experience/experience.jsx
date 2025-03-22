@@ -45,6 +45,16 @@ const StylingTitleBelowTextcontainer = styled.div`
   justify-content: space-evenly;
   align-self: flex-start;
   gap: 15px;
+
+
+  @media screen and (max-width: 480px) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-self: flex-start;
+  gap: 8px;
+  flex-wrap:wrap;
+  }
 `;
 
 const StylingTitleBelowText = styled.div`

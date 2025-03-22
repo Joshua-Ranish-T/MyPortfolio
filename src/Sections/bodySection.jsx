@@ -55,7 +55,7 @@ const bodySection = ({
       icon: <LayersOutlinedIcon sx={{ color: secondaryColor }} />,
       title: "AI Application Development",
       description:
-        "Designing, building, and implementing intelligent applications with seamless functionality and comprehensive documentation for scalability and performance.",
+        "Designing and developing intelligent applications with seamless functionality, scalability, and clear documentation for performance and maintenance.",
     },
     {
       icon: <LanguageIcon sx={{ color: secondaryColor }} />,

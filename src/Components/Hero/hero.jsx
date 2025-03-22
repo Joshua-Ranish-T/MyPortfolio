@@ -37,10 +37,14 @@ const Hero = ({
 
   return (
     <div id="hero">
-      <div className="hero-content" data-aos="fade-up-right"  data-aos-duration="2000">
+      <div
+        className="hero-content"
+        data-aos="fade-up-right"
+        data-aos-duration="2000"
+      >
         <StyledHead style={{ fontSize: "12px" }} value={heading} />
 
-        <h1>
+        <h1 className="textG">
           {fName}{" "}
           <TypeAnimation
             sequence={[sName, 2000, "", 1000]}
@@ -51,6 +55,18 @@ const Hero = ({
             style={{ color: secondaryColor }}
           />
         </h1>
+        <h3 style={{margin:"0" , color:secondaryColor }}>
+          Web 
+        <TypeAnimation
+          sequence={["  Developer !!", 2000, "", 1000]}
+          wrapper="span"
+          cursor
+          speed={20}
+          repeat={Infinity}
+          style={{ color: isDarkMode ? "#fff" : "#000" }}
+        />
+        </h3>
+        {/* <StyledHead style={{ fontSize: "10px" }} value={"Web Developer"} /> */}
         <div className="diver">
           <StyledText size={16}>{Content}</StyledText>
         </div>
@@ -63,7 +79,12 @@ const Hero = ({
       </div>
 
       {!isMobileOrTablet && (
-        <div className="hero-image" data-aos="fade-up-left"  data-aos-duration="2000" style={{ "--border-color": borderColor }}>
+        <div
+          className="hero-image"
+          data-aos="fade-up-left"
+          data-aos-duration="2000"
+          style={{ "--border-color": borderColor }}
+        >
           <div className="ring">
             <i style={{ "--clr": "#0B6285" }}></i>
             <i style={{ "--clr": secondaryColor }}></i>

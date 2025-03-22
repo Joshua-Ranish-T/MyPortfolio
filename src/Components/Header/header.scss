@@ -1,3 +1,101 @@
+// .navbar {
+//   display: flex;
+//   justify-content: space-between;
+//   flex-direction: row;
+//   padding: 15px 0px;
+//   position: sticky;
+//   top: 0;
+//   padding-top: 25px;
+//   padding-left: 10%;
+//   padding-right: 8%;
+//   align-items: center;
+//   font-family: Inter;
+//   font-style: normal;
+//   font-weight: 400;
+//   z-index: 1;
+// }
+
+// .desktop-menu {
+//   display: flex;
+//   gap: 56px;
+//   align-items: center;
+// }
+
+// .navbar-buttons {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   gap: 32px;
+// }
+
+// .navbar-hamburger {
+//   display: none;
+// }
+
+// /* Mobile Menu - only show on small screens */
+// @media screen and (max-width: 768px) {
+//   .desktop-menu {
+//     display: none; /* Hide the menu items */
+//   }
+//   .navbar-hamburger {
+//     display: flex;
+//     /* Center the hamburger icon */
+//     justify-content: center;
+//     align-items: center;
+//   }
+//   .mobile-menu {
+//     position: absolute;
+//     top: 70px;
+//     right: 0;
+//     background-color: #fff;
+//     width: 100%;
+//     padding: 10px 20px;
+//     display: flex;
+//     flex-direction: column;
+//     gap: 10px;
+//     z-index: 10;
+//   }
+// }
+
+// .hamburger-btn {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 5px;
+//   background: none;
+//   border: none;
+//   cursor: pointer;
+// }
+
+// .hamburger-line {
+//   width: 25px;
+//   height: 2px;
+// }
+// // .navbar-logo{
+// //   .IMG{
+// //     height:"auto";
+// //     width:"255px";
+// //   }
+// // }
+
+// @media screen and (max-width: 450px) {
+//   img{
+//     height:"auto";
+//     width:"155px";
+
+//   }
+  
+// }
+
+
+
+
+
+
+
+
+
+
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -48,12 +146,19 @@
     top: 70px;
     right: 0;
     background-color: #fff;
-    width: 100%;
+    width: 10;
     padding: 10px 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
     z-index: 10;
+  }
+  .navbar {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .navbar-buttons {
+    gap: 16px;
   }
 }
 
@@ -69,4 +174,17 @@
 .hamburger-line {
   width: 25px;
   height: 2px;
+}
+img{
+  height: auto;
+  width: 225px;
+}
+@media screen and (max-width: 450px) {
+  img {
+    height: auto;
+    width: 200px;
+  }
+  .navbar-buttons {
+    gap: 8px;
+  }
 }
