@@ -14,6 +14,7 @@ const App = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 }); // Cursor position for the dot
   const [delayedPosition, setDelayedPosition] = useState({ x: 0, y: 0 }); // Delayed position for the ring
   const [isClicked, setIsClicked] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   const toggleTheme = () => {
     setIsDarkMode((prevMode) => !prevMode);
@@ -46,6 +47,17 @@ const App = () => {
   };
 
   // Update cursor position for the dot
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768 || navigator.maxTouchPoints > 0);
+    };
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, [isMobile]);
+
+
   useEffect(() => {
     const handlePointerMove = (e) => {
       setPosition({ x: e.clientX, y: e.clientY });
@@ -56,6 +68,7 @@ const App = () => {
       window.removeEventListener("pointermove", handlePointerMove);
     };
   }, []);
+
 
   // Smooth trailing effect for the ring using requestAnimationFrame
   useEffect(() => {
