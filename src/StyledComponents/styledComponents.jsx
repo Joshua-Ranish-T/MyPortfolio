@@ -81,6 +81,7 @@ export const StyledSocialLinks = ({ Insta, GitHub, X, linkedIn }) => {
   );
 };
 
+
 export const StyledBox = styled.div`
   display: flex;
   width: 1200px;

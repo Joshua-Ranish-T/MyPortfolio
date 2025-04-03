@@ -148,7 +148,6 @@ import BODY from "./Sections/bodySection.jsx";
 import FOOTER from "./Sections/footerSection.jsx";
 import personImage from "./Assets/profile1.JPG";
 import Resume from "./Assets/Joshua-Ranish-T-Resume.pdf"
-
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { CssBaseline } from "@mui/material";
 import { fullbgcolor, darkbgcolor } from "./theme.js";

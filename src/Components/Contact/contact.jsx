@@ -21,6 +21,7 @@ import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
 import EmailIcon from "@mui/icons-material/Email";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import emailjs from '@emailjs/browser';
 
 const Contact = ({ Address, phone, Email, isDarkMode }) => {
 
@@ -45,32 +46,50 @@ const Contact = ({ Address, phone, Email, isDarkMode }) => {
       value: Email,
     },
   ];
+  const form = useRef();
 
     const handleSubmit = async (event) => {
       event.preventDefault();
       const name = nameRef.current.value;
       const email = mailRef.current.value;
       const message = messageRef.current.value;
-    
-      try {
-        const response = await fetch("http://localhost:5000/send-email", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ name, email, message }),
-        });
-    
-        if (response.ok) {
+
+      emailjs
+      .sendForm('service_sx7ppza', 'template_rv4yjig', form.current, {
+        publicKey: '68tDjwR8LvmDyYcUU',
+      })
+      .then(
+        () => {
           toast.success("Message sent successfully!");
           nameRef.current.value = "";
           mailRef.current.value = "";
           messageRef.current.value = "";
-        } else {
-          toast.error("Failed to send message. Try again later.");
-        }
-      } catch (error) {
-        console.error("Error sending message:", error);
-        toast.error("Something went wrong.");
-      }
+
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+          toast.error("Failed to send message. Try again .");
+        },
+      );
+      // try {
+      //   const response = await fetch("http://localhost:5000/send-email", {
+      //     method: "POST",
+      //     headers: { "Content-Type": "application/json" },
+      //     body: JSON.stringify({ name, email, message }),
+      //   });
+    
+      //   if (response.ok) {
+      //     toast.success("Message sent successfully!");
+      //     nameRef.current.value = "";
+      //     mailRef.current.value = "";
+      //     messageRef.current.value = "";
+      //   } else {
+      //     toast.error("Failed to send message. Try again later.");
+      //   }
+      // } catch (error) {
+      //   console.error("Error sending message:", error);
+      //   toast.error("Something went wrong.");
+      // }
     };
     
   
@@ -81,7 +100,7 @@ const Contact = ({ Address, phone, Email, isDarkMode }) => {
     >
       <div className="left" >
         <form
-          onSubmit={handleSubmit}
+          onSubmit={handleSubmit} ref={form}
         >
           <Box
             sx={{
@@ -105,6 +124,7 @@ const Contact = ({ Address, phone, Email, isDarkMode }) => {
               inputRef={nameRef}
               data-aos="fade-right"
               data-aos-duration="1000"
+              name="user_name"
             />
             <TextField
               fullWidth
@@ -117,6 +137,7 @@ const Contact = ({ Address, phone, Email, isDarkMode }) => {
               sx={{ mt: 2, background: isDarkMode ? darkbgcolor : fullbgcolor }}
               data-aos="fade-right"
               data-aos-duration="1000"
+              name="user_email"
             />
           </Box>
 
@@ -134,6 +155,7 @@ const Contact = ({ Address, phone, Email, isDarkMode }) => {
           >
             <TextField
             data-aos="fade-right"
+            name="message"
             data-aos-duration="1000"
               fullWidth
               label="Your Message"

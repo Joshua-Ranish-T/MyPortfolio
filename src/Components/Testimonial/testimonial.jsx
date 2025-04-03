@@ -60,6 +60,55 @@ const Testimonial = ({
     margin-left: 20px;
   `;
 
+
+
+
+ const StyledBoxer = styled.div`
+  display: flex;
+  width: 1200px;
+  height: ${(props) => props.height}px;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: ${(props) => props.gap}px;
+  align-content: center;
+  /* padding-left: 120px;
+  padding-right: 120px; */
+  flex-wrap: nowrap;
+  overflow: auto;
+  scroll-behavior: smooth;
+  
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    width: 105%; 
+    flex-direction: ${(props) => props.mobileDirection || "row"};
+    gap: 15px; 
+    overflow: auto;
+    height: auto; 
+    padding: 10px;
+    align-items:center
+  
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 105%; 
+    flex-direction: ${(props) => props.mobileDirection || "row"};  
+    gap: 50px; 
+    overflow:auto;
+    height: auto;
+    padding: 10px;
+    align-items:center
+
+  }
+
+
+`;
+
+
+
 return (
   <div
     id="Testimonial" 
@@ -69,7 +118,7 @@ return (
       <StyledHead value={testHeading} subvalue={subtestHeading} />
     </div>
     <div className="bot" >
-      <StyledBox height={300} gap={48} style={{overflow:"initial"}} mobileDirection={"column"}>
+      <StyledBoxer height={300} gap={48} style={{overflow:"initial"}} mobileDirection={"column"}>
         {testSector.map((item, index) => (
          
          
@@ -96,7 +145,7 @@ return (
             <StylingTitleBelowText>{item.work}</StylingTitleBelowText>
           </StyledBoxInside>
         ))}
-      </StyledBox>
+      </StyledBoxer>
     </div>
   </div>
 );
