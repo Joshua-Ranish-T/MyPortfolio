@@ -21,6 +21,36 @@ import test3 from "../Assets/test3.jpeg";
 import Login from "../Assets/LoginPage.png"
 import AI from "../Assets/AiArt.png"
 
+//Images
+import html from "../Assets/html.png";
+import css from "../Assets/css.png";
+import js from "../Assets/js.png";
+import react from "../Assets/react.png";
+import java from "../Assets/java.png";
+import firebase from "../Assets/firebase.png";
+import python from "../Assets/python.png";
+import node from "../Assets/node.png";
+import aws from "../Assets/aws.png";
+import cpp from "../Assets/c++.png";
+import colab from "../Assets/colab.png";
+import figma from "../Assets/figma.png";
+import git from "../Assets/git.png";
+import vscode from "../Assets/vscode.png";
+import github from "../Assets/github.png";
+import gns3 from "../Assets/gns3.png";
+import mongo from "../Assets/mongo.png";
+import npm from "../Assets/npm.png";
+import sass from "../Assets/sass.png";
+import bootstrap from "../Assets/bootstrap.png";
+import streamlit from "../Assets/streamlit.png";
+import express from "../Assets/express-js.png";
+import langchain from "../Assets/langchain.png";
+import huggingface from "../Assets/huggingface.png";
+import chroma from "../Assets/chroma.png";
+// import vercel from "../Assets/vercel.png";
+import n8n from "../Assets/n8n.png";
+import salesforce from "../Assets/salesforce.png";
+
 const bodySection = ({
   toggleTheme,
   isDarkMode,
@@ -220,21 +250,30 @@ const bodySection = ({
       year: "2019-2021",
     },
   ];
-  const skillcontent =
-    "I have been actively exploring and mastering front-end and AI-driven technologies, building responsive web applications, optimizing performance, and integrating intelligent solutions. Here’s a snapshot of my technical expertise and skills.";
-  const skillscore = [
-    { skill: "React Js", percent: 95 },
-    { skill: "Java", percent: 80 },
-    { skill: "SCSS/CSS", percent: 75 },
-    { skill: "JavaScript", percent: 60 },
-    { skill: "Firebase", percent: 30 },
-    { skill: "Node Js", percent: 60 },
-    { skill: "MySQL", percent: 30 },
-    { skill: "HTML5", percent: 100 },
-    { skill: "Python", percent: 50 },
-    { skill: "C++", percent: 40 },
-
-  ];
+  // const skillcontent =
+    // "I have been actively exploring and mastering front-end and AI-driven technologies, building responsive web applications, optimizing performance, and integrating intelligent solutions. Here’s a snapshot of my technical expertise and skills.";
+const skillscore = [
+  {
+    Name: "Front-End",
+    Logo: [html, css, js, sass, bootstrap, react,streamlit],
+  },
+  {
+    Name: "Back-End",
+    Logo: [firebase,express,node,mongo],
+  },
+  {
+    Name: "Tools",
+    Logo: [colab, figma, git, github, vscode, gns3, npm, aws,salesforce],
+  },
+  {
+    Name: "Artificial Intelligence",
+    Logo: [langchain, huggingface, chroma,n8n],
+  },
+  {
+    Name: "Programming Languages",
+    Logo: [java, cpp, python],
+  },
+];
 
   return (
     <>
@@ -274,7 +313,6 @@ const bodySection = ({
         subeduskillsHeading={subeduskillsHeading}
         isDarkMode={isDarkMode}
         eduskillsSector={eduskillsSector}
-        skillcontent={skillcontent}
         skillscore={skillscore}
       />
     </>

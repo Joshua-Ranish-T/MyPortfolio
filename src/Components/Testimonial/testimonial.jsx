@@ -114,7 +114,7 @@ return (
     id="Testimonial" 
     style={{ backgroundColor: isDarkMode ? halfdarkbgcolor : bgcolor }}
   >
-    <div className="top" data-aos="fade-right" data-aos-duration="1500">
+    <div className="top"  data-aos="fade-right" data-aos-duration="1500">
       <StyledHead value={testHeading} subvalue={subtestHeading} />
     </div>
     <div className="bot" >
@@ -133,9 +133,7 @@ return (
               alignItems: "flex-start",
               
             }}
-            data-aos="fade-down"
-     data-aos-easing="linear"
-     data-aos-duration="1000"
+     
           >
              <ImageContainer>
                 <StyledImageRound src={item.Image} />
