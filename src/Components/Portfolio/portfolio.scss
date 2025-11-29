@@ -1,42 +1,44 @@
 #Portfolios {
   display: flex;
-  height: 800px;
+  min-height: 100vh;
+  height: auto;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  padding-bottom: 60px;
+  gap: 40px;
 
   .head {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0px 170px;
+    padding: 60px 170px 0px 170px;
   }
 
   .foot {
     display: flex;
     justify-content: center;
+    width: 100%;
   }
 
   @media screen and (max-width: 1024px) {
-    #Portfolios {
-      height: auto;
-    }
     .head {
-      padding: 0px 50px; 
+      padding: 40px 50px 0px 50px; 
     }
   }
 
   @media screen and (max-width: 768px) {
-    height: auto;
-    padding: 5px;
+    padding: 20px 0;
+    
     .head {
       flex-direction: column;
       padding: 0px 20px;
+      margin-bottom: 20px;
     }
 
     .foot {
       flex-direction: column;
       justify-content: flex-start;
-      padding: 20px;
+      padding: 0 20px;
     }
   }
 }

@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { secondaryColor,fontColor,logobgcolor } from "../theme";
+import { secondaryColor, fontColor, logobgcolor } from "../theme";
 import RemoveOutlinedIcon from "@mui/icons-material/RemoveOutlined";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -84,52 +84,55 @@ export const StyledSocialLinks = ({ Insta, GitHub, X, linkedIn }) => {
 
 export const StyledBox = styled.div`
   display: flex;
-  width: 1200px;
-  height: ${(props) => props.height}px;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  height: auto;
   flex-direction: row;
-  justify-content: space-between;
-  gap: ${(props) => props.gap}px;
-  align-content: center;
-  /* padding-left: 120px;
-  padding-right: 120px; */
+  justify-content: flex-start;
+  gap: ${(props) => props.gap || 32}px;
+  align-items: center;
   flex-wrap: nowrap;
-  overflow: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
   scroll-behavior: smooth;
+  padding: 20px 60px;
+  
+  /* Hide scrollbar for cleaner Apple-style look */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   
   &::-webkit-scrollbar {
     display: none;
   }
-
-   @media screen and (max-width: 1024px) {
-    width: 100%; 
-    flex-direction: row; 
-    gap: 20px; 
-    padding:20px;
+  
+  /* Smooth momentum scrolling on iOS */
+  -webkit-overflow-scrolling: touch;
+  
+  @media screen and (max-width: 1440px) {
+    max-width: 1200px;
+    padding: 20px 40px;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    padding: 20px 30px;
+    gap: 24px;
+    max-width: 100%;
   }
 
   @media screen and (max-width: 768px) {
-    width: 105%; 
     flex-direction: ${(props) => props.mobileDirection || "row"};
-    gap: 15px; 
-    overflow: auto;
-    height: auto; 
-    padding: 10px;
-    align-items:center
+    flex-wrap: ${(props) => (props.mobileDirection === "column" ? "nowrap" : "nowrap")};
+    overflow-x: ${(props) => (props.mobileDirection === "column" ? "visible" : "auto")};
+    padding: 15px 20px;
+    gap: 20px;
+    align-items: ${(props) => (props.mobileDirection === "column" ? "center" : "center")};
+  }
   
-  }
-
   @media screen and (max-width: 480px) {
-    width: 105%; 
-    flex-direction: ${(props) => props.mobileDirection || "row"};  
-    gap: 10px; 
-    overflow:auto;
-    height: auto;
-    padding: 10px;
-    align-items:center
-
+    padding: 10px 15px;
+    gap: 16px;
   }
-
-
 `;
 
 
@@ -138,14 +141,32 @@ export const StyledBoxInside = styled.div`
   display: flex;
   flex-direction: column;
   background-color: ${(props) => props.bgcolor};
-  width: 361px; /* Default width */
+  width: 361px;
+  min-width: 361px;
+  flex-shrink: 0;
   height: ${(props) => props.height}px;
   justify-content: center;
   border-radius: 8px;
   gap: ${(props) => props.gap}px;
   align-items: center;
   text-align: center;
- 
+  
+  @media screen and (max-width: 1024px) {
+    width: 340px;
+    min-width: 340px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    max-width: 400px;
+    min-width: unset;
+    flex-shrink: 1;
+  }
+  
+  @media screen and (max-width: 480px) {
+    max-width: 100%;
+    padding: 20px;
+  }
 `;
 
 
@@ -160,7 +181,7 @@ export const StylingIcon = styled.div`
     margin-bottom: 10px;
   `;
 
- export const StyledExperienceData = styled.div`
+export const StyledExperienceData = styled.div`
   font-size: ${(props) => props.size}px;
   font-weight: ${(props) => props.weight};
   color: ${(props) => props.color};

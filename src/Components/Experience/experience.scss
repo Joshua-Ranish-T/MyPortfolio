@@ -120,26 +120,35 @@
           justify-content: center;
           gap: 0.5rem;
         }
+
         /* Reduce padding on the parent container */
         .MuiPaper-root {
-          padding: 0; /* Remove extra padding */
+          padding: 0;
+          /* Remove extra padding */
           display: flex;
-          justify-content: flex-start; /* Align the content to the left */
+          justify-content: flex-start;
+          /* Align the content to the left */
         }
 
         /* Ensure <ul> takes up the full width and uses flexbox for alignment */
         ul.MuiList-root.MuiList-padding.MenuList {
           display: flex;
-          width: 100%; /* Take full width of the parent */
-          justify-content: flex-start; /* Align the menu items to the left */
-          padding: 0; /* Remove extra padding */
-          margin: 0; /* Remove any margin if present */
-          list-style: none; /* Remove bullet points if necessary */
+          width: 100%;
+          /* Take full width of the parent */
+          justify-content: flex-start;
+          /* Align the menu items to the left */
+          padding: 0;
+          /* Remove extra padding */
+          margin: 0;
+          /* Remove any margin if present */
+          list-style: none;
+          /* Remove bullet points if necessary */
         }
 
         /* Ensure each <a> tag inside the <ul> is treated as a flex item */
         ul.MuiList-root.MuiList-padding.MenuList a {
-          display: inline-block; /* This ensures they are laid out horizontally */
+          display: inline-block;
+          /* This ensures they are laid out horizontally */
         }
       }
 
@@ -201,8 +210,10 @@
   .MuiPaper-root {
     position: relative;
     padding: 1rem;
-    max-height: 300px; /* Adjust this as needed to set the height */
-    overflow: auto; /* Enable scrolling when content exceeds the container's height */
+    max-height: 300px;
+    /* Adjust this as needed to set the height */
+    overflow: auto;
+    /* Enable scrolling when content exceeds the container's height */
     border-radius: 4px;
     box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
       0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -214,10 +225,13 @@
     list-style: none;
     margin: 0;
     display: flex;
-    flex-direction: column; /* Stack items vertically by default */
-    gap: 0.5rem; /* Add spacing between items */
+    flex-direction: column;
+    /* Stack items vertically by default */
+    gap: 0.5rem;
+    /* Add spacing between items */
     max-height: 100%;
-    overflow-y: auto; /* Vertical scrolling when necessary */
+    overflow-y: auto;
+    /* Vertical scrolling when necessary */
   }
 
   /* Styling for each MenuItem */
@@ -230,35 +244,44 @@
   }
 
   .MuiMenuItem-root:hover {
-    background-color: rgba(0, 0, 0, 0.08); /* Light hover effect */
+    background-color: rgba(0, 0, 0, 0.08);
+    /* Light hover effect */
   }
 
   /* Styling for the text inside each menu item */
   .MuiListItemText-root .MuiTypography-body1 {
-    font-size: 14px; /* Adjust font size as needed */
+    font-size: 14px;
+    /* Adjust font size as needed */
   }
 
   /* Styling for the icon */
   .MuiSvgIcon-root {
-    margin-left: 0.5rem; /* Space between text and icon */
-    width: 18px; /* Adjust icon size */
+    margin-left: 0.5rem;
+    /* Space between text and icon */
+    width: 18px;
+    /* Adjust icon size */
     height: 18px;
-    fill: #7e74f1; /* Icon color */
+    fill: #7e74f1;
+    /* Icon color */
   }
 
   /* Scrollbar styling for the MenuList */
   .MuiList-root.MenuList::-webkit-scrollbar {
-    width: 8px; /* Vertical scrollbar width */
-    height: 8px; /* Horizontal scrollbar height */
+    width: 8px;
+    /* Vertical scrollbar width */
+    height: 8px;
+    /* Horizontal scrollbar height */
   }
 
   .MuiList-root.MenuList::-webkit-scrollbar-thumb {
-    background: #7e74f1; /* Scrollbar thumb color */
+    background: #7e74f1;
+    /* Scrollbar thumb color */
     border-radius: 10px;
   }
 
   .MuiList-root.MenuList::-webkit-scrollbar-track {
-    background: initial; /* Scrollbar track color */
+    background: initial;
+    /* Scrollbar track color */
   }
 
   /* Scrollbar styling for Paper component if it also requires scroll */
