@@ -11,7 +11,7 @@ import { secondaryColor } from "../theme.js";
 import chatAppImage from "../Assets/ChatApp.png";
 import Nexcent from "../Assets/Nexcent.png";
 import VPN from "../Assets/VPN.png";
-import PortfolioImage from "../Assets/portfolioImage.png";
+import NeoTutor from "../Assets/NeoTutor.png";
 import blog1 from "../Assets/blog1.png";
 import blog2 from "../Assets/blog2.png";
 import blog3 from "../Assets/blog3.png";
@@ -20,6 +20,9 @@ import test2 from "../Assets/test2.png";
 import test3 from "../Assets/test3.jpeg";
 import Login from "../Assets/LoginPage.png"
 import AI from "../Assets/AiArt.png"
+import DocuChat from "../Assets/Docuchat.png"
+import n8nproj from "../Assets/n8nproj.png"
+import certvault from "../Assets/certvault.png"
 
 //Images
 import html from "../Assets/html.png";
@@ -48,8 +51,11 @@ import langchain from "../Assets/langchain.png";
 import huggingface from "../Assets/huggingface.png";
 import chroma from "../Assets/chroma.png";
 // import vercel from "../Assets/vercel.png";
-import n8n from "../Assets/n8n.png";
+import langgraph from "../Assets/langgraph.png";
 import salesforce from "../Assets/salesforce.png";
+import mysql from "../Assets/mysql.png";
+import n8n from "../Assets/n8n.png";
+import docker from "../Assets/docker.png";
 
 const bodySection = ({
   toggleTheme,
@@ -59,6 +65,12 @@ const bodySection = ({
   const serviceHeading = "Services";
   const subServiceHeading = "Specialized in";
   const ServiceSector = [
+    {
+      icon: <LayersOutlinedIcon sx={{ color: secondaryColor }} />,
+      title: "AI Application Development",
+      description:
+        "Creating smart AI systems using LLMs, RAG, and modern ML tools to solve real-world problems effectively.",
+    },
     {
       icon: (
         <svg
@@ -77,21 +89,15 @@ const bodySection = ({
           />
         </svg>
       ),
-      title: "UI/UX Design",
+      title: "Problem Solving",
       description:
-        "Crafting intuitive and visually appealing user experiences that bring your digital product ideas to life. Designed for any platform you envision.",
-    },
-    {
-      icon: <LayersOutlinedIcon sx={{ color: secondaryColor }} />,
-      title: "AI Application Development",
-      description:
-        "Designing and developing intelligent applications with seamless functionality, scalability, and clear documentation for performance and maintenance.",
+        "Tackling complex coding challenges with clear logic and efficient solutions across platforms like LeetCode.",
     },
     {
       icon: <LanguageIcon sx={{ color: secondaryColor }} />,
       title: "Web Development",
       description:
-        "Building and maintaining high-performance websites while ensuring optimal speed, scalability, and seamless user experience across all devices.",
+        "Building fast, clean, and responsive web interfaces with React and modern UI frameworks.",
     },
   ];
 
@@ -100,41 +106,86 @@ const bodySection = ({
   const subportfolioHeading = "Featured Portfolios";
   const PortfolioSector = [
     {
-      title: "AI-Art Interpreter",
+      title: "Neo — AI Tutor with Animated Explanations",
+      domain: "AI · ML · LLMs",
+      image: NeoTutor,
+      link: "https://github.com/Joshua-Ranish-T/AI-Tutor-Manim-Video-Generation"  // or direct repo URL if any
+    },
+    {
+      title: "DocuChat AI — RAG-based Chatbot",
+      domain: "AI · ML · NLP",
+      image: DocuChat,
+      link: "https://github.com/Joshua-Ranish-T/DocuChat_AI-RAG"  // or direct repo URL
+    },
+    {
+      title: "CertVault: Your Immutable Certification Vault",
+      domain: "Blockchain",
+      image: certvault,
+      link: "https://github.com/Joshua-Ranish-T/CertVault-Web3"
+    },
+    {
+      title: "N8N AI Agent Project",
       domain: "Artificial Intelligence",
+      image: n8nproj,
+      link: ""
+    },
+    {
+      title: "AI-Art Interpreter",
+      domain: "Artificial Intelligence · Computer Vision",
       image: AI,
-      link: "https://github.com/Joshua-Ranish-T/AI-Art_Interpreter",
+      link: "https://github.com/Joshua-Ranish-T/AI-Art_Interpreter"
+    },
+    {
+      title: "Portfolio Template Web App",
+      domain: "React.js · UI/UX",
+      image: Nexcent,
+      link: "https://github.com/Joshua-Ranish-T/Nexcent-React-basic"
     },
     {
       title: "Chat Application",
-      domain: "Firebase",
+      domain: "React.js · Firebase · Real-Time",
       image: chatAppImage,
-      link: "https://github.com/Joshua-Ranish-T/ChatApp-ReactJs-Firebase",
+      link: "https://github.com/Joshua-Ranish-T/ChatApp-ReactJs-Firebase"
     },
     {
-      title: "VPN Implementation",
-      domain: "Networking",
-      image: VPN,
-      link: "",
-    },
-    {
-      title: "Login/SignUp Page",
-      domain: "Formik,yup",
+      title: "Login / SignUp Page",
+      domain: "React.js · Formik · Validation",
       image: Login,
-      link: "https://github.com/Joshua-Ranish-T/React-Formik-Yup-Toastify-login_signup_Page",
+      link: "https://github.com/Joshua-Ranish-T/React-Formik-Yup-Toastify-login_signup_Page"
     },
     {
-      title: "Web Application",
-      domain: "React Js",
-      image: Nexcent,
-      link: "https://github.com/Joshua-Ranish-T/Nexcent-React-basic",
-    },
+      title: "VPN Implementation (Networking Project)",
+      domain: "Networking · Simulation",
+      image: VPN,
+      link: ""  // (No GitHub link provided)
+    }
   ];
+
 
   //Experience
   const experienceHeading = "CAREER PATH";
   const subexperienceHeading = "PROFESSIONAL Experience";
   const WorkExperience = [
+    {
+      company: "Icanio Technologies",
+      domain: "AIML Intern",
+      link: "https://icanio.com/",
+      location: "Tirunelveli, Tamil Nadu",
+      starttime: "May 2025",
+      endtime: "Jun 2025",
+      workperiod: "On-Site",
+      language: [
+        "Python", "Flask", "ML/DL",
+        "Transformers",
+        "LangChain", "LangGraph", "ChromaDB"
+      ],
+      feedback: [
+        "Completed comprehensive training in Python, Flask, ML, DL, NLP, and transformer-based architectures.",
+        "Designed and deployed end-to-end LLM applications using LangChain, LangGraph, OpenAI, Gemini, and Hugging Face.",
+        "Developed RAG-based chatbots with Chroma vector database integration.",
+        "Gained practical experience implementing modern AI workflows and production-ready pipelines."
+      ]
+    },
     {
       company: "Icanio Technologies",
       domain: "Front-end Developer Intern",
@@ -143,13 +194,13 @@ const bodySection = ({
       starttime: "Nov 2024",
       endtime: "Dec 2024",
       workperiod: "On-Site",
-      language: ["React Js", "Formik", "YUP", "Tailwind CSS", "Material-UI", "SCSS/CSS" ,"AOS"],
+      language: ["React Js", "Formik", "YUP", "Material-UI", "SCSS/CSS", "AOS"],
       feedback: [
         "Built reusable UI components with React.js, Material-UI, SCSS, and Tailwind CSS.",
         "Integrated Formik, Yup, and Toastify for seamless form validation and user feedback.",
         "Improved application responsiveness, stability, and performance optimization.",
-        "Enhanced development workflow, ensuring efficient project execution.",
-      ],
+        "Enhanced development workflow, ensuring efficient project execution."
+      ]
     },
     {
       company: "Rishon Communication",
@@ -159,16 +210,16 @@ const bodySection = ({
       starttime: "May 2024",
       endtime: "Jun 2024",
       workperiod: "Hybrid",
-      language: ["MPLS", "OSPF", "MP-iBGP", "BGP","Subnetting", "Dynamic Routing", "GNS3"],
+      language: ["MPLS", "OSPF", "MP-iBGP", "BGP", "Subnetting", "Dynamic Routing", "GNS3"],
       feedback: [
         "Configured VPN networks with MPLS, OSPF, and MP-iBGP in GNS3 for secure transmission.",
         "Conducted manual tests to ensure seamless connectivity and high availability.",
         "Implemented BGP peering, subnetting, and static routing to enhance network performance.",
-        "Gained hands-on experience in network protocols, troubleshooting, and configuration.",
-      ],
-    },
- 
+        "Gained hands-on experience in network protocols, troubleshooting, and configuration."
+      ]
+    }
   ];
+
 
   //Blog
   const blogHeading = "MY ARTICLES";
@@ -201,31 +252,31 @@ const bodySection = ({
   const testHeading = "TESTIMONIALS";
   const subtestHeading = "What Others Say";
   const testSector = [
-  
+
     {
       Image: test2,
       content:
-"Collaborating with him on networking tasks was great. His VPN expertise made complex setups easier.",
-        name: "Dudley Daniel Raj, Teammate",
-        work: "Networking Intern, Rishon Communication",
+        "Collaborating with him on networking tasks was great. His VPN expertise made complex setups easier.",
+      name: "Dudley Daniel Raj, Teammate",
+      work: "Networking Intern, Rishon Communication",
     },
     {
       Image: test1,
       content:
-      "A dedicated front-end developer with strong React skills and a focus on performance optimization.",  
+        "A dedicated front-end developer with strong React skills and a focus on performance optimization.",
       name: "K. Vinoth Raja",
       work: "Reporting Manager, Icanio Technologies",
     },
     {
       Image: test3,
       content:
-"Working with him on AI applications was insightful. His problem-solving and model optimization had a real impact.",
+        "Working with him on AI applications was insightful. His problem-solving and model optimization had a real impact.",
       name: "Kandiah C, Colleague",
       work: "AI Development Team",
     }
-    
+
   ];
-  
+
 
   //Eduskills
   const eduskillsHeading = "LEARNING PATH";
@@ -251,29 +302,29 @@ const bodySection = ({
     },
   ];
   // const skillcontent =
-    // "I have been actively exploring and mastering front-end and AI-driven technologies, building responsive web applications, optimizing performance, and integrating intelligent solutions. Here’s a snapshot of my technical expertise and skills.";
-const skillscore = [
-  {
-    Name: "Front-End",
-    Logo: [html, css, js, sass, bootstrap, react,streamlit],
-  },
-  {
-    Name: "Back-End",
-    Logo: [firebase,express,node,mongo],
-  },
-  {
-    Name: "Tools",
-    Logo: [colab, figma, git, github, vscode, gns3, npm, aws,salesforce],
-  },
-  {
-    Name: "Artificial Intelligence",
-    Logo: [langchain, huggingface, chroma,n8n],
-  },
-  {
-    Name: "Programming Languages",
-    Logo: [java, cpp, python],
-  },
-];
+  // "I have been actively exploring and mastering front-end and AI-driven technologies, building responsive web applications, optimizing performance, and integrating intelligent solutions. Here’s a snapshot of my technical expertise and skills.";
+  const skillscore = [
+    {
+      Name: "Front-End",
+      Logo: [html, css, js, sass, bootstrap, react, streamlit],
+    },
+    {
+      Name: "Back-End",
+      Logo: [mysql, firebase, express, node, mongo],
+    },
+    {
+      Name: "Tools",
+      Logo: [colab, salesforce, figma, git, github, vscode, gns3, npm, aws, docker],
+    },
+    {
+      Name: "Artificial Intelligence",
+      Logo: [langchain, huggingface, chroma, langgraph, n8n],
+    },
+    {
+      Name: "Programming Languages",
+      Logo: [java, cpp, python],
+    },
+  ];
 
   return (
     <>

@@ -152,6 +152,7 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { CssBaseline } from "@mui/material";
 import { fullbgcolor, darkbgcolor } from "./theme.js";
 
+
 const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [position, setPosition] = useState({ x: -100, y: -100 }); // Start off-screen
@@ -175,11 +176,11 @@ const App = () => {
     },
   });
 
-    const userDetails = {
+  const userDetails = {
     firstName: "Joshua",
     secondName: "Ranish T",
     photo: personImage,
-    Resume: Resume, 
+    Resume: "https://flowcv.com/resume/2j810ktj1j6t",
     Insta: "https://www.instagram.com/joshua._.ranish",
     GitHub: "https://github.com/Joshua-Ranish-T",
     X: "",
@@ -241,7 +242,7 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      
+
       {/* Custom Cursor - Conditional rendering */}
       {!isMobile && (
         <>
@@ -258,7 +259,7 @@ const App = () => {
             transition: "opacity 0.3s",
             opacity: position.x < 0 ? 0 : 1 // Hide when off-screen
           }} />
-          
+
           <div style={{
             position: "fixed",
             left: delayedPosition.x - 24,

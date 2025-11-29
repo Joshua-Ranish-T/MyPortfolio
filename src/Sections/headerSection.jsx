@@ -19,26 +19,26 @@ const headerSection = ({
   const resumeURL = Resume ? Resume : "";
 
   const heroHeading = "MY NAME IS";
-  const Content = "Creative Web Developer with expertise in React.js, AI integration, real-time data handling, and API management. Passionate about building responsive, user-friendly interfaces with a focus on performance and seamless user experiences.";
+  const Content = "A creator who treats every project like a new arc-learning, leveling up, and crafting solutions that actually matter. Whether it's AI, web apps, or tricky problems, I enjoy pushing my limits and building things that feel powerful and alive.";
 
   return (
     <>
-      <Header 
-        logo={LOGO} 
-        resume={resumeURL} 
+      <Header
+        logo={LOGO}
+        resume={resumeURL}
         toggleTheme={toggleTheme}
         isDarkMode={isDarkMode}
-        logodark = {LOGODARK}
+        logodark={LOGODARK}
       />
-      <Hero 
-        fName={firstName} 
-        sName={secondName} 
-        photo={photo} 
-        heading={heroHeading} 
+      <Hero
+        fName={firstName}
+        sName={secondName}
+        photo={photo}
+        heading={heroHeading}
         Content={Content}
-        Insta={Insta} 
-        GitHub={GitHub} 
-        X={X} 
+        Insta={Insta}
+        GitHub={GitHub}
+        X={X}
         linkedIn={linkedIn}
         isDarkMode={isDarkMode}
       />

@@ -55,16 +55,16 @@ const Hero = ({
             style={{ color: secondaryColor }}
           />
         </h1>
-        <h3 style={{margin:"0" , color:secondaryColor }}>
-          Web 
-        <TypeAnimation
-          sequence={["  Developer !!", 2000, "", 1000]}
-          wrapper="span"
-          cursor
-          speed={20}
-          repeat={Infinity}
-          style={{ color: isDarkMode ? "#fff" : "#000" }}
-        />
+        <h3 style={{ margin: "0", color: secondaryColor }}>
+          Software
+          <TypeAnimation
+            sequence={["  Developer !!", 2000, "", 1000]}
+            wrapper="span"
+            cursor
+            speed={20}
+            repeat={Infinity}
+            style={{ color: isDarkMode ? "#fff" : "#000" }}
+          />
         </h3>
         {/* <StyledHead style={{ fontSize: "10px" }} value={"Web Developer"} /> */}
         <div className="diver">

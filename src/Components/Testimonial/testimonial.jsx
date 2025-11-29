@@ -63,7 +63,7 @@ const Testimonial = ({
 
 
 
- const StyledBoxer = styled.div`
+  const StyledBoxer = styled.div`
   display: flex;
   width: 1200px;
   height: ${(props) => props.height}px;
@@ -109,44 +109,44 @@ const Testimonial = ({
 
 
 
-return (
-  <div
-    id="Testimonial" 
-    style={{ backgroundColor: isDarkMode ? halfdarkbgcolor : bgcolor }}
-  >
-    <div className="top"  data-aos="fade-right" data-aos-duration="1500">
-      <StyledHead value={testHeading} subvalue={subtestHeading} />
-    </div>
-    <div className="bot" >
-      <StyledBoxer height={300} gap={48} style={{overflow:"initial"}} mobileDirection={"column"}>
-        {testSector.map((item, index) => (
-         
-         
-          <StyledBoxInside
-            key={index}
-            bgcolor={isDarkMode ? darkbgcolor : fullbgcolor}
-            height={300}
-            gap={5}
-            style={{
-              textAlign: "left",
-              justifyContent: "space-around",
-              alignItems: "flex-start",
-              
-            }}
-     
-          >
-             <ImageContainer>
+  return (
+    <div
+      id="Testimonial"
+      style={{ backgroundColor: isDarkMode ? halfdarkbgcolor : bgcolor }}
+    >
+      <div className="top" data-aos="fade-right" data-aos-duration="1500">
+        <StyledHead value={testHeading} subvalue={subtestHeading} />
+      </div>
+      <div className="bot" data-aos="zoom-in-down" data-aos-duration="1500">
+        <StyledBoxer height={300} gap={48} style={{ overflow: "initial" }} mobileDirection={"column"} >
+          {testSector.map((item, index) => (
+
+
+            <StyledBoxInside
+              key={index}
+              bgcolor={isDarkMode ? darkbgcolor : fullbgcolor}
+              height={300}
+              gap={5}
+              style={{
+                textAlign: "left",
+                justifyContent: "space-around",
+                alignItems: "flex-start",
+
+              }}
+
+            >
+              <ImageContainer>
                 <StyledImageRound src={item.Image} />
               </ImageContainer>
-            <StyledDomain>{item.content}</StyledDomain>
-            <StylingTitle>{item.name}</StylingTitle>
-            <StylingTitleBelowText>{item.work}</StylingTitleBelowText>
-          </StyledBoxInside>
-        ))}
-      </StyledBoxer>
+              <StyledDomain>{item.content}</StyledDomain>
+              <StylingTitle>{item.name}</StylingTitle>
+              <StylingTitleBelowText>{item.work}</StylingTitleBelowText>
+            </StyledBoxInside>
+          ))}
+        </StyledBoxer>
+      </div>
     </div>
-  </div>
-);
+  );
 };
 
 export default Testimonial;
