@@ -109,57 +109,58 @@ const bodySection = ({
       title: "Neo — AI Tutor with Animated Explanations",
       domain: "AI · ML · LLMs",
       image: NeoTutor,
-      link: "https://github.com/Joshua-Ranish-T/AI-Tutor-Manim-Video-Generation"  // or direct repo URL if any
+      link: "https://github.com/Joshua-Ranish-T/AI-Tutor-Manim-Video-Generation"
     },
     {
-      title: "DocuChat AI — RAG-based Chatbot",
+      title: "DocuChat AI — RAG-Based Chatbot",
       domain: "AI · ML · NLP",
       image: DocuChat,
-      link: "https://github.com/Joshua-Ranish-T/DocuChat_AI-RAG"  // or direct repo URL
+      link: "https://github.com/Joshua-Ranish-T/DocuChat_AI-RAG"
     },
     {
-      title: "CertVault: Your Immutable Certification Vault",
-      domain: "Blockchain",
+      title: "CertVault — Immutable Certification Vault",
+      domain: "Blockchain · Web3",
       image: certvault,
       link: "https://github.com/Joshua-Ranish-T/CertVault-Web3"
     },
     {
-      title: "N8N AI Agent Project",
-      domain: "Artificial Intelligence",
+      title: "n8n AI Agent Project",
+      domain: "AI · Automation",
       image: n8nproj,
       link: ""
     },
     {
       title: "AI-Art Interpreter",
-      domain: "Artificial Intelligence · Computer Vision",
+      domain: "AI · Computer Vision",
       image: AI,
       link: "https://github.com/Joshua-Ranish-T/AI-Art_Interpreter"
     },
     {
-      title: "Portfolio Template Web App",
+      title: "Nexcent — Basic Web App",
       domain: "React.js · UI/UX",
       image: Nexcent,
       link: "https://github.com/Joshua-Ranish-T/Nexcent-React-basic"
     },
     {
-      title: "Chat Application",
+      title: "Real-Time Chat Application",
       domain: "React.js · Firebase · Real-Time",
       image: chatAppImage,
       link: "https://github.com/Joshua-Ranish-T/ChatApp-ReactJs-Firebase"
     },
     {
-      title: "Login / SignUp Page",
+      title: "Login / SignUp Page (Formik + Validation)",
       domain: "React.js · Formik · Validation",
       image: Login,
       link: "https://github.com/Joshua-Ranish-T/React-Formik-Yup-Toastify-login_signup_Page"
     },
     {
-      title: "VPN Implementation (Networking Project)",
+      title: "VPN Implementation — Networking Project (Simulation)",
       domain: "Networking · Simulation",
       image: VPN,
-      link: ""  // (No GitHub link provided)
+      link: ""
     }
   ];
+
 
 
   //Experience
@@ -305,6 +306,10 @@ const bodySection = ({
   // "I have been actively exploring and mastering front-end and AI-driven technologies, building responsive web applications, optimizing performance, and integrating intelligent solutions. Here’s a snapshot of my technical expertise and skills.";
   const skillscore = [
     {
+      Name: "Programming Languages",
+      Logo: [java, cpp, python],
+    },
+    {
       Name: "Front-End",
       Logo: [html, css, js, sass, bootstrap, react, streamlit],
     },
@@ -313,16 +318,12 @@ const bodySection = ({
       Logo: [mysql, firebase, express, node, mongo],
     },
     {
-      Name: "Tools",
-      Logo: [colab, salesforce, figma, git, github, vscode, gns3, npm, aws, docker],
-    },
-    {
       Name: "Artificial Intelligence",
       Logo: [langchain, huggingface, chroma, langgraph, n8n],
     },
     {
-      Name: "Programming Languages",
-      Logo: [java, cpp, python],
+      Name: "Tools",
+      Logo: [colab, salesforce, figma, git, github, vscode, gns3, npm, aws, docker],
     },
   ];
 
